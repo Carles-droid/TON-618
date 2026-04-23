@@ -76,7 +76,7 @@
      TIPOGRAFÍA — FAMILIAS
   ============================================================ */
 
-  --fuenteDisplay: "Syncopate", sans-serif; /* títulos, nombre de banda */
+  --fuenteDisplay: "Metal Mania", sans-serif; /* títulos, nombre de banda */
   --fuenteCuerpo:
     "Libre Baskerville", serif; /* texto corrido, bio, descripciones */
   --fuenteMono:
@@ -117,7 +117,7 @@
      TIPOGRAFÍA — ESPACIADO DE LETRAS
   ============================================================ */
 
-  --letraEspaciadoDisplay: 0.12em; /* Syncopate — nombre de banda */
+  --letraEspaciadoDisplay: 0.12em; /* Metal Mania — nombre de banda */
   --letraEspaciadoEyebrow: 0.2em; /* eyebrows en mayúsculas */
   --letraEspaciadoMono: 0.06em; /* Space Mono general */
   --letraEspaciadoBoton: 0.1em; /* texto de botones */
