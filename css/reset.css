@@ -1,0 +1,248 @@
+/* ============================================================
+   reset.css
+   TON 618 — Reset + Normalize moderno
+   ============================================================ */
+
+/* ============================================================
+   1. BOX MODEL
+============================================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:     0;
+  padding:    0;
+}
+
+/* ============================================================
+   2. DOCUMENTO Y ROOT
+============================================================ */
+
+html {
+  font-size:               100%;        /* 1rem = 16px */
+  scroll-behavior:         smooth;
+  text-size-adjust:        100%;
+  -webkit-text-size-adjust: 100%;
+  tab-size:                4;
+  hanging-punctuation:     first last;
+}
+
+body {
+  min-height:              100vh;
+  background-color:        var(--colorFondoVoid);
+  color:                   var(--colorTextoBase);
+  font-family:             var(--fuenteCuerpo);
+  font-size:               var(--tamanoTextoCuerpo);
+  font-weight:             var(--pesoRegular);
+  line-height:             var(--lineaAltura);
+  letter-spacing:          var(--letraEspaciadoCuerpo);
+  -webkit-font-smoothing:  antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering:          optimizeLegibility;
+  overflow-x:              hidden;
+}
+
+/* ============================================================
+   3. TIPOGRAFÍA BASE
+============================================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family:    var(--fuenteDisplay);
+  font-weight:    var(--pesoBold);
+  line-height:    var(--lineaAlturaAjustada);
+  letter-spacing: var(--letraEspaciadoDisplay);
+  text-transform: var(--textoTransformDisplay);
+  color:          var(--colorTextoBase);
+  overflow-wrap:  break-word;
+}
+
+p {
+  overflow-wrap:  break-word;
+  max-width:      70ch;
+}
+
+/* ============================================================
+   4. LISTAS
+============================================================ */
+
+ul, ol {
+  list-style: none;
+}
+
+/* ============================================================
+   5. ENLACES
+============================================================ */
+
+a {
+  color:                    inherit;
+  text-decoration:          none;
+  background-color:         transparent;
+  transition:               color var(--transicionRapida),
+                            opacity var(--transicionRapida);
+}
+
+a:hover {
+  color: var(--colorTextoNavLinkHover);
+}
+
+/* ============================================================
+   6. IMÁGENES Y MEDIOS
+============================================================ */
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display:    block;
+  max-width:  100%;
+}
+
+img,
+video {
+  height:      auto;
+  object-fit:  cover;
+}
+
+svg {
+  overflow:   visible;
+  fill:       currentColor;
+}
+
+/* ============================================================
+   7. FORMULARIOS E INTERACTIVOS
+============================================================ */
+
+button,
+input,
+select,
+textarea {
+  font:             inherit;
+  color:            inherit;
+  background:       transparent;
+  border:           none;
+  outline:          none;
+  appearance:       none;
+  -webkit-appearance: none;
+}
+
+button {
+  cursor:        pointer;
+  display:       inline-flex;
+  align-items:   center;
+  justify-content: center;
+  line-height:   1;
+}
+
+button:disabled {
+  cursor:   not-allowed;
+  opacity:  0.45;
+}
+
+/* ============================================================
+   8. FOCO — ACCESIBILIDAD
+============================================================ */
+
+:focus-visible {
+  outline:        2px solid var(--colorFoco);
+  outline-offset: 3px;
+  box-shadow:     var(--sombraAcentoFoco);
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ============================================================
+   9. SELECCIÓN DE TEXTO
+============================================================ */
+
+::selection {
+  background-color: var(--colorAcentoPrimario);
+  color:            var(--colorTextoInverso);
+}
+
+::-moz-selection {
+  background-color: var(--colorAcentoPrimario);
+  color:            var(--colorTextoInverso);
+}
+
+/* ============================================================
+   10. SCROLLBAR (Webkit)
+============================================================ */
+
+::-webkit-scrollbar {
+  width:  6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--colorFondoVoid);
+}
+
+::-webkit-scrollbar-thumb {
+  background:    var(--colorAcentoCore);
+  border-radius: var(--radioRedondo);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--colorAcentoPrimario);
+}
+
+/* ============================================================
+   11. TABLA
+============================================================ */
+
+table {
+  border-collapse: collapse;
+  border-spacing:  0;
+}
+
+/* ============================================================
+   12. VARIOS
+============================================================ */
+
+hr {
+  border:           none;
+  border-top:       1px solid var(--colorBordeDivider);
+  margin:           0;
+}
+
+sup,
+sub {
+  font-size:       0.65em;
+  vertical-align:  baseline;
+  position:        relative;
+}
+
+sup {
+  top: -0.4em;
+}
+
+sub {
+  bottom: -0.2em;
+}
+
+abbr[title] {
+  text-decoration:  underline dotted;
+  cursor:           help;
+}
+
+/* bloqueo de scroll cuando hay modal o panel abierto */
+body.scrollLock {
+  overflow: hidden;
+}
+
+/* clase utilitaria: visualmente oculto pero accesible para lectores de pantalla */
+.sr-only {
+  position:   absolute;
+  width:      1px;
+  height:     1px;
+  padding:    0;
+  margin:     -1px;
+  overflow:   hidden;
+  clip:       rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border:     0;
+}
