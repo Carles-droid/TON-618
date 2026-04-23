@@ -5,159 +5,170 @@
    ============================================================ */
 
 :root {
-
   /* ============================================================
      COLOR — FONDOS
   ============================================================ */
 
-  --colorFondoVoid:          #080808;   /* fondo principal, negro absoluto */
-  --colorFondoDeep:          #111111;   /* fondo secundario, superficies */
-  --colorFondoEmber:         #1A0A00;   /* fondo de secciones con temperatura */
-  --colorFondoOverlay:       rgba(8, 8, 8, 0.72);   /* overlays generales */
-  --colorFondoOverlayFuerte: rgba(8, 8, 8, 0.90);   /* overlay hero, modales */
-  --colorFondoOverlayNavbar: rgba(8, 8, 8, 0.85);   /* navbar al hacer scroll */
-  --colorFondoNavbarBlur:    rgba(11, 11, 11, 0.80); /* navbar con backdrop-filter */
+  --colorFondoVoid: #080808; /* fondo principal, negro absoluto */
+  --colorFondoDeep: #111111; /* fondo secundario, superficies */
+  --colorFondoEmber: #1a0a00; /* fondo de secciones con temperatura */
+  --colorFondoOverlay: rgba(8, 8, 8, 0.72); /* overlays generales */
+  --colorFondoOverlayFuerte: rgba(8, 8, 8, 0.9); /* overlay hero, modales */
+  --colorFondoOverlayNavbar: rgba(8, 8, 8, 0.85); /* navbar al hacer scroll */
+  --colorFondoNavbarBlur: rgba(
+    11,
+    11,
+    11,
+    0.8
+  ); /* navbar con backdrop-filter */
 
   /* ============================================================
      COLOR — ACENTO (disco de acreción)
   ============================================================ */
 
-  --colorAcentoPrimario:     #C95E00;   /* CTAs, hover activo, foco */
-  --colorAcentoSecundario:   #E8A020;   /* eyebrows, detalles, iconos activos */
-  --colorAcentoCore:         #7A3200;   /* acento oscuro, estados pressed */
-  --colorAcentoFlareClaro:   #F0A840;   /* hover sobre acento primario */
-  --colorAcentoEmber:        #1A0A00;   /* fondo tenue de acento, chips */
+  --colorAcentoPrimario: #c95e00; /* CTAs, hover activo, foco */
+  --colorAcentoSecundario: #e8a020; /* eyebrows, detalles, iconos activos */
+  --colorAcentoCore: #7a3200; /* acento oscuro, estados pressed */
+  --colorAcentoFlareClaro: #f0a840; /* hover sobre acento primario */
+  --colorAcentoEmber: #1a0a00; /* fondo tenue de acento, chips */
 
   /* ============================================================
      COLOR — TEXTO
   ============================================================ */
 
-  --colorTextoBase:          #D8D0C0;   /* texto principal, blanco cálido */
-  --colorTextoSecundario:    #A89880;   /* texto de apoyo, descripciones */
-  --colorTextoTerciario:     #6A5A48;   /* texto deshabilitado, placeholders */
-  --colorTextoInverso:       #080808;   /* texto sobre fondos de acento sólido */
-  --colorTextoAcento:        #E8A020;   /* texto con color de acento dorado */
-  --colorTextoNavLink:       #D8D0C0;   /* links de navegación */
-  --colorTextoNavLinkHover:  #E8A020;   /* links de nav en hover */
-  --colorTextoEyebrow:       #C95E00;   /* eyebrows / etiquetas de sección */
-  --colorTextoFooter:        #6A5A48;   /* texto secundario del footer */
-  --colorTextoFooterLink:    #A89880;   /* links del footer */
-  --colorTextoFooterHover:   #E8A020;   /* links del footer en hover */
+  --colorTextoBase: #d8d0c0; /* texto principal, blanco cálido */
+  --colorTextoSecundario: #a89880; /* texto de apoyo, descripciones */
+  --colorTextoTerciario: #6a5a48; /* texto deshabilitado, placeholders */
+  --colorTextoInverso: #080808; /* texto sobre fondos de acento sólido */
+  --colorTextoAcento: #e8a020; /* texto con color de acento dorado */
+  --colorTextoNavLink: #d8d0c0; /* links de navegación */
+  --colorTextoNavLinkHover: #e8a020; /* links de nav en hover */
+  --colorTextoEyebrow: #c95e00; /* eyebrows / etiquetas de sección */
+  --colorTextoFooter: #6a5a48; /* texto secundario del footer */
+  --colorTextoFooterLink: #a89880; /* links del footer */
+  --colorTextoFooterHover: #e8a020; /* links del footer en hover */
 
   /* ============================================================
      COLOR — BORDES Y SEPARADORES
   ============================================================ */
 
-  --colorBordeBase:          rgba(216, 208, 192, 0.08);  /* bordes sutiles generales */
-  --colorBordeMedio:         rgba(216, 208, 192, 0.15);  /* bordes medios */
-  --colorBordeFuerte:        rgba(216, 208, 192, 0.28);  /* bordes con énfasis */
-  --colorBordeAcento:        rgba(201, 94, 0, 0.40);     /* bordes con acento */
-  --colorBordeDivider:       rgba(216, 208, 192, 0.10);  /* líneas divisoras */
+  --colorBordeBase: rgba(216, 208, 192, 0.08); /* bordes sutiles generales */
+  --colorBordeMedio: rgba(216, 208, 192, 0.15); /* bordes medios */
+  --colorBordeFuerte: rgba(216, 208, 192, 0.28); /* bordes con énfasis */
+  --colorBordeAcento: rgba(201, 94, 0, 0.4); /* bordes con acento */
+  --colorBordeDivider: rgba(216, 208, 192, 0.1); /* líneas divisoras */
 
   /* ============================================================
      COLOR — ESTADOS UI
   ============================================================ */
 
-  --colorFoco:               #E8A020;   /* outline de foco accesible */
-  --colorFocoSombra:         rgba(232, 160, 32, 0.35);
-  --colorHoverSuperficie:    rgba(216, 208, 192, 0.04);  /* hover sobre áreas */
-  --colorActivoSuperficie:   rgba(201, 94, 0, 0.08);     /* área activa / seleccionada */
+  --colorFoco: #e8a020; /* outline de foco accesible */
+  --colorFocoSombra: rgba(232, 160, 32, 0.35);
+  --colorHoverSuperficie: rgba(216, 208, 192, 0.04); /* hover sobre áreas */
+  --colorActivoSuperficie: rgba(
+    201,
+    94,
+    0,
+    0.08
+  ); /* área activa / seleccionada */
 
   /* ============================================================
      TIPOGRAFÍA — FAMILIAS
   ============================================================ */
 
-  --fuenteDisplay:    'Syncopate', sans-serif;         /* títulos, nombre de banda */
-  --fuenteCuerpo:     'Libre Baskerville', serif;      /* texto corrido, bio, descripciones */
-  --fuenteMono:       'Space Mono', monospace;         /* eyebrows, datos técnicos, coordenadas */
+  --fuenteDisplay: "Syncopate", sans-serif; /* títulos, nombre de banda */
+  --fuenteCuerpo:
+    "Libre Baskerville", serif; /* texto corrido, bio, descripciones */
+  --fuenteMono:
+    "Space Mono", monospace; /* eyebrows, datos técnicos, coordenadas */
 
   /* ============================================================
      TIPOGRAFÍA — ESCALA DE TAMAÑOS
   ============================================================ */
 
-  --tamanoTextoXs:    0.6875rem;   /* 11px — legal, notas mínimas */
-  --tamanoTextoSm:    0.75rem;     /* 12px — labels, badges */
-  --tamanoTextoBase:  0.875rem;    /* 14px — texto de apoyo */
-  --tamanoTextoCuerpo: 1rem;       /* 16px — cuerpo de texto principal */
-  --tamanoTextoMd:    1.125rem;    /* 18px — texto destacado */
-  --tamanoTextoLg:    1.25rem;     /* 20px — subtítulos pequeños */
-  --tamanoTextoXl:    1.5rem;      /* 24px — subtítulos */
-  --tamanoTexto2xl:   2rem;        /* 32px — títulos de sección */
-  --tamanoTexto3xl:   2.5rem;      /* 40px — títulos grandes */
-  --tamanoTexto4xl:   3.5rem;      /* 56px — hero desktop */
-  --tamanoTexto5xl:   5rem;        /* 80px — hero impacto máximo */
+  --tamanoTextoXs: 0.6875rem; /* 11px — legal, notas mínimas */
+  --tamanoTextoSm: 0.75rem; /* 12px — labels, badges */
+  --tamanoTextoBase: 0.875rem; /* 14px — texto de apoyo */
+  --tamanoTextoCuerpo: 1rem; /* 16px — cuerpo de texto principal */
+  --tamanoTextoMd: 1.125rem; /* 18px — texto destacado */
+  --tamanoTextoLg: 1.25rem; /* 20px — subtítulos pequeños */
+  --tamanoTextoXl: 1.5rem; /* 24px — subtítulos */
+  --tamanoTexto2xl: 2rem; /* 32px — títulos de sección */
+  --tamanoTexto3xl: 2.5rem; /* 40px — títulos grandes */
+  --tamanoTexto4xl: 3.5rem; /* 56px — hero desktop */
+  --tamanoTexto5xl: 5rem; /* 80px — hero impacto máximo */
 
   /* ============================================================
      TIPOGRAFÍA — PESOS
   ============================================================ */
 
-  --pesoRegular:      400;
-  --pesoBold:         700;
+  --pesoRegular: 400;
+  --pesoBold: 700;
 
   /* ============================================================
      TIPOGRAFÍA — INTERLINEADO
   ============================================================ */
 
-  --lineaAltura:         1.7;    /* cuerpo de texto */
-  --lineaAlturaAjustada: 1.2;    /* títulos grandes */
-  --lineaAlturaMono:     1.5;    /* texto monoespaciado */
+  --lineaAltura: 1.7; /* cuerpo de texto */
+  --lineaAlturaAjustada: 1.2; /* títulos grandes */
+  --lineaAlturaMono: 1.5; /* texto monoespaciado */
 
   /* ============================================================
      TIPOGRAFÍA — ESPACIADO DE LETRAS
   ============================================================ */
 
-  --letraEspaciadoDisplay:  0.12em;   /* Syncopate — nombre de banda */
-  --letraEspaciadoEyebrow:  0.20em;   /* eyebrows en mayúsculas */
-  --letraEspaciadoMono:     0.06em;   /* Space Mono general */
-  --letraEspaciadoBoton:    0.10em;   /* texto de botones */
-  --letraEspaciadoCuerpo:   0.01em;   /* Libre Baskerville */
+  --letraEspaciadoDisplay: 0.12em; /* Syncopate — nombre de banda */
+  --letraEspaciadoEyebrow: 0.2em; /* eyebrows en mayúsculas */
+  --letraEspaciadoMono: 0.06em; /* Space Mono general */
+  --letraEspaciadoBoton: 0.1em; /* texto de botones */
+  --letraEspaciadoCuerpo: 0.01em; /* Libre Baskerville */
 
   /* ============================================================
      TIPOGRAFÍA — TRANSFORMACIONES
   ============================================================ */
 
-  --textoTransformDisplay:  uppercase;
-  --textoTransformEyebrow:  uppercase;
-  --textoTransformNavLink:  uppercase;
-  --textoTransformBoton:    uppercase;
+  --textoTransformDisplay: uppercase;
+  --textoTransformEyebrow: uppercase;
+  --textoTransformNavLink: uppercase;
+  --textoTransformBoton: uppercase;
 
   /* ============================================================
      ESPACIADO — ESCALA BASE (múltiplos de 4px)
   ============================================================ */
 
-  --espacio1:    0.25rem;    /*  4px */
-  --espacio2:    0.5rem;     /*  8px */
-  --espacio3:    0.75rem;    /* 12px */
-  --espacio4:    1rem;       /* 16px */
-  --espacio5:    1.25rem;    /* 20px */
-  --espacio6:    1.5rem;     /* 24px */
-  --espacio8:    2rem;       /* 32px */
-  --espacio10:   2.5rem;     /* 40px */
-  --espacio12:   3rem;       /* 48px */
-  --espacio16:   4rem;       /* 64px */
-  --espacio20:   5rem;       /* 80px */
-  --espacio24:   6rem;       /* 96px */
-  --espacio32:   8rem;       /* 128px */
+  --espacio1: 0.25rem; /*  4px */
+  --espacio2: 0.5rem; /*  8px */
+  --espacio3: 0.75rem; /* 12px */
+  --espacio4: 1rem; /* 16px */
+  --espacio5: 1.25rem; /* 20px */
+  --espacio6: 1.5rem; /* 24px */
+  --espacio8: 2rem; /* 32px */
+  --espacio10: 2.5rem; /* 40px */
+  --espacio12: 3rem; /* 48px */
+  --espacio16: 4rem; /* 64px */
+  --espacio20: 5rem; /* 80px */
+  --espacio24: 6rem; /* 96px */
+  --espacio32: 8rem; /* 128px */
 
   /* ============================================================
      ESPACIADO — SECCIONES
   ============================================================ */
 
-  --paddingSeccionVertical:        6rem;     /* padding top/bottom secciones desktop */
-  --paddingSeccionVerticalTablet:  4rem;
-  --paddingSeccionVerticalMobile:  3rem;
-  --paddingSeccionHorizontal:      1.5rem;   /* padding lateral en mobile */
+  --paddingSeccionVertical: 6rem; /* padding top/bottom secciones desktop */
+  --paddingSeccionVerticalTablet: 4rem;
+  --paddingSeccionVerticalMobile: 3rem;
+  --paddingSeccionHorizontal: 1.5rem; /* padding lateral en mobile */
 
   /* ============================================================
      LAYOUT — CONTENEDOR
   ============================================================ */
 
-  --anchoContenedorMax:    1280px;
-  --anchoContenedorMd:     960px;
-  --anchoContenedorSm:     720px;
-  --paddingContenedor:     2rem;       /* lateral desktop */
-  --paddingContenedorMd:   1.5rem;     /* lateral tablet */
-  --paddingContenedorSm:   1.25rem;    /* lateral mobile */
+  --anchoContenedorMax: 1280px;
+  --anchoContenedorMd: 960px;
+  --anchoContenedorSm: 720px;
+  --paddingContenedor: 2rem; /* lateral desktop */
+  --paddingContenedorMd: 1.5rem; /* lateral tablet */
+  --paddingContenedorSm: 1.25rem; /* lateral mobile */
 
   /* ============================================================
      LAYOUT — BREAKPOINTS (referencia para JS y media queries)
@@ -172,95 +183,95 @@
      LAYOUT — NAVBAR
   ============================================================ */
 
-  --alturaNavbar:              72px;
-  --alturaNavbarMobile:        60px;
-  --zIndexNavbar:              100;
-  --anchoMobilePanel:          80vw;
-  --anchoMobilePanelMax:       360px;
-  --tiempoPanelMobile:         280ms;
+  --alturaNavbar: 80px;
+  --alturaNavbarMobile: 60px;
+  --zIndexNavbar: 100;
+  --anchoMobilePanel: 80vw;
+  --anchoMobilePanelMax: 360px;
+  --tiempoPanelMobile: 280ms;
 
   /* ============================================================
      LAYOUT — HERO
   ============================================================ */
 
-  --alturaHero:                100vh;
-  --alturaHeroMinima:          600px;
+  --alturaHero: 100vh;
+  --alturaHeroMinima: 600px;
 
   /* ============================================================
      LAYOUT — GRID DE FLYERS
   ============================================================ */
 
-  --gapGridFlyers:             8px;
-  --gapGridFlyersMobile:       8px;
+  --gapGridFlyers: 8px;
+  --gapGridFlyersMobile: 8px;
 
   /* ============================================================
      BORDES — RADIOS
   ============================================================ */
 
-  --radioNone:     0px;
-  --radioXs:       2px;
-  --radioSm:       4px;
-  --radioMd:       6px;
-  --radioLg:       10px;
-  --radioXl:       16px;
-  --radioRedondo:  9999px;   /* pills, tags */
+  --radioNone: 0px;
+  --radioXs: 2px;
+  --radioSm: 4px;
+  --radioMd: 6px;
+  --radioLg: 10px;
+  --radioXl: 16px;
+  --radioRedondo: 9999px; /* pills, tags */
 
   /* ============================================================
      SOMBRAS
   ============================================================ */
 
-  --sombraBase:        0 2px 8px rgba(0, 0, 0, 0.50);
-  --sombraMedia:       0 4px 24px rgba(0, 0, 0, 0.70);
-  --sombraFuerte:      0 8px 48px rgba(0, 0, 0, 0.90);
-  --sombraAcento:      0 4px 24px rgba(201, 94, 0, 0.30);
-  --sombraAcentoFoco:  0 0 0 3px rgba(232, 160, 32, 0.35);
-  --sombraLightbox:    0 16px 80px rgba(0, 0, 0, 0.95);
+  --sombraBase: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --sombraMedia: 0 4px 24px rgba(0, 0, 0, 0.7);
+  --sombraFuerte: 0 8px 48px rgba(0, 0, 0, 0.9);
+  --sombraAcento: 0 4px 24px rgba(201, 94, 0, 0.3);
+  --sombraAcentoFoco: 0 0 0 3px rgba(232, 160, 32, 0.35);
+  --sombraLightbox: 0 16px 80px rgba(0, 0, 0, 0.95);
 
   /* ============================================================
      TRANSICIONES Y ANIMACIONES
   ============================================================ */
 
-  --tiempoRapido:       150ms;
-  --tiempoBase:         250ms;
-  --tiempoMedio:        400ms;
-  --tiempoLento:        600ms;
-  --tiempoMuyLento:     900ms;
+  --tiempoRapido: 150ms;
+  --tiempoBase: 250ms;
+  --tiempoMedio: 400ms;
+  --tiempoLento: 600ms;
+  --tiempoMuyLento: 900ms;
 
-  --curvaBase:          ease;
-  --curvaEntrada:       cubic-bezier(0.22, 1, 0.36, 1);    /* overshoot suave */
-  --curvaSalida:        cubic-bezier(0.64, 0, 0.78, 0);
-  --curvaLineal:        linear;
+  --curvaBase: ease;
+  --curvaEntrada: cubic-bezier(0.22, 1, 0.36, 1); /* overshoot suave */
+  --curvaSalida: cubic-bezier(0.64, 0, 0.78, 0);
+  --curvaLineal: linear;
 
-  --transicionBase:     var(--tiempoBase) var(--curvaBase);
-  --transicionSuave:    var(--tiempoMedio) var(--curvaEntrada);
-  --transicionRapida:   var(--tiempoRapido) var(--curvaBase);
+  --transicionBase: var(--tiempoBase) var(--curvaBase);
+  --transicionSuave: var(--tiempoMedio) var(--curvaEntrada);
+  --transicionRapida: var(--tiempoRapido) var(--curvaBase);
 
   /* ============================================================
      Z-INDEX — ESCALA
   ============================================================ */
 
-  --zBase:         1;
-  --zFlotante:     10;
-  --zDropdown:     50;
-  --zNavbar:       100;
-  --zOverlay:      200;
-  --zModal:        300;
-  --zToast:        400;
+  --zBase: 1;
+  --zFlotante: 10;
+  --zDropdown: 50;
+  --zNavbar: 100;
+  --zOverlay: 200;
+  --zModal: 300;
+  --zToast: 400;
 
   /* ============================================================
      EFECTOS — TEXTURAS Y FILTROS
   ============================================================ */
 
-  --blurNavbar:          blur(12px);
-  --blurOverlay:         blur(4px);
-  --blurLightbox:        blur(6px);
-  --grainnOpacidad:      0.035;      /* opacidad del grain/noise SVG */
+  --blurNavbar: blur(12px);
+  --blurOverlay: blur(4px);
+  --blurLightbox: blur(6px);
+  --grainnOpacidad: 0.035; /* opacidad del grain/noise SVG */
   --overlayHeroGradient: linear-gradient(
-                           to bottom,
-                           rgba(8, 8, 8, 0.30) 0%,
-                           rgba(8, 8, 8, 0.55) 50%,
-                           rgba(8, 8, 8, 0.80) 100%
-                         );
+    to bottom,
+    rgba(8, 8, 8, 0.3) 0%,
+    rgba(8, 8, 8, 0.55) 50%,
+    rgba(8, 8, 8, 0.8) 100%
+  );
 
   /* ============================================================
      IMÁGENES — RUTAS DE REFERENCIA
@@ -269,5 +280,4 @@
 
   /* --imagenHero:         url('../assets/images/hero-bg.jpg');      */
   /* --imagenTourBanner:   url('../assets/images/tour-banner.jpg');  */
-
 }

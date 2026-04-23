@@ -79,7 +79,7 @@
 }
 
 .nav-logo-img {
-  height: 40px;
+  height: 66px;
   width: auto;
   display: block;
   transition: opacity var(--transicionRapida);
@@ -187,10 +187,26 @@
   transform: translateX(100%);
   transition: transform var(--tiempoPanelMobile) var(--curvaEntrada);
   overflow-y: auto;
+  padding-top: var(--espacio8);
 }
 
 .mobile-panel.open {
   transform: translateX(0);
+}
+
+.mobile-panel-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: var(--espacio8);
+  margin-bottom: var(--espacio6);
+  border-bottom: 1px solid var(--colorBordeBase);
+}
+
+.mobile-panel-logo img {
+  height: 60px;
+  width: auto;
+  display: block;
 }
 
 .mobile-nav-links {
@@ -718,7 +734,7 @@
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1.5fr 1.5fr;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
   gap: var(--espacio12);
   align-items: start;
 }
