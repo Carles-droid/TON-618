@@ -590,7 +590,7 @@
   overflow: hidden;
   cursor: pointer;
   background-color: var(--colorFondoDeep);
-  border: none;
+  border: solid 1px var(--colorBordeAcento);
   padding: 0;
   aspect-ratio: 4 / 5;
 }
@@ -685,6 +685,7 @@
   object-position: center top;
   filter: grayscale(30%) contrast(1.05);
   transition: filter var(--tiempoLento) var(--curvaEntrada);
+  border: solid 1px var(--colorBordeAcento);
 }
 
 .bio-image:hover img {
