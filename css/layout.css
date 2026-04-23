@@ -279,17 +279,16 @@
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url("../assets/img/hero03.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   z-index: 1;
-  transform: scale(1.04);
-  transition: transform 8s var(--curvaLineal);
+  overflow: hidden;
 }
 
-.section-hero.loaded .hero-bg {
-  transform: scale(1);
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .hero-overlay {
@@ -541,19 +540,6 @@
    8. FLYERS PREVIEW
 ============================================================ */
 
-.section-flyers {
-  background-color: var(--colorFondoVoid);
-  padding: var(--paddingSeccionVertical) 0;
-}
-
-.flyers-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto auto;
-  gap: var(--gapGridFlyers);
-  margin-top: var(--espacio10);
-}
-
 /* Grid asimétrico:
    A = col 1-2, row 1      → horizontal destacado
    B = col 3, row 1-2      → vertical destacado
@@ -561,6 +547,35 @@
    D = col 2, row 2        → pequeño
    E = col 2-3, row 3      → horizontal inferior
 */
+
+/* ============================================================
+   8. FLYERS PREVIEW
+============================================================ */
+
+.section-flyers {
+  background-color: var(--colorFondoVoid);
+  padding: var(--paddingSeccionVertical) 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-flyers .container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.flyers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: var(--gapGridFlyers);
+  margin-top: var(--espacio6);
+  flex: 1;
+  min-height: 0;
+}
 
 .flyer-a {
   grid-column: 1 / 3;
@@ -587,23 +602,13 @@
   position: relative;
   display: block;
   width: 100%;
+  height: 100%;
   overflow: hidden;
   cursor: pointer;
   background-color: var(--colorFondoDeep);
-  border: solid 1px var(--colorBordeAcento);
+  border: 1px solid var(--colorBordeAcento);
   padding: 0;
-  aspect-ratio: 4 / 5;
-}
-
-.flyer-a,
-.flyer-e {
-  aspect-ratio: auto;
-  min-height: 240px;
-}
-
-.flyer-b,
-.flyer-c {
-  aspect-ratio: auto;
+  /* SIN aspect-ratio — el grid controla la altura */
 }
 
 .flyer-item img {

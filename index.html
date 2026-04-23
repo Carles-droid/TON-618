@@ -227,15 +227,19 @@
     <main id="home">
       <!-- HERO -->
       <section id="hero" class="section-hero" aria-label="Hero">
-        <div class="hero-bg" aria-hidden="true"></div>
-        <div class="hero-overlay" aria-hidden="true"></div>
-        <div class="hero-content">
-          <h1 class="hero-title">TON 618</h1>
-          <p class="hero-tagline">Gravitational Doom</p>
-          <div class="hero-cta-group">
-            <a href="#latest-release" class="btn btn-primary">Listen</a>
-            <a href="tour.html" class="btn btn-secondary">Tour</a>
-          </div>
+        <!-- HERO BG VIDEO -->
+        <div class="hero-bg" aria-hidden="true">
+          <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+          >
+            <source src="assets/video/hero.webm" type="video/webm" />
+            <source src="assets/video/hero.mp4" type="video/mp4" />
+          </video>
         </div>
       </section>
 
@@ -264,7 +268,7 @@
           <div class="release-grid">
             <div class="release-cover">
               <img
-                src="assets/img/album_cover.jpg"
+                src="assets/img/album_cover.webp"
                 alt="Album cover — [Album Title]"
                 width="450"
                 height="450"
@@ -299,7 +303,7 @@
       <section id="tour" class="section-tour" aria-labelledby="tour-heading">
         <div class="tour-banner" aria-hidden="true">
           <img
-            src="assets/img/banner02.png"
+            src="assets/img/banner02.webp"
             alt=""
             width="1920"
             height="500"
@@ -376,7 +380,7 @@
               data-index="0"
             >
               <img
-                src="assets/img/flyers/flyer01.png"
+                src="assets/img/flyers/flyer01.webp"
                 alt="TON 618 flyer 1"
                 loading="lazy"
               />
@@ -387,7 +391,7 @@
               data-index="1"
             >
               <img
-                src="assets/img/flyers/flyer02.png"
+                src="assets/img/flyers/flyer02.webp"
                 alt="TON 618 flyer 2"
                 loading="lazy"
               />
@@ -398,7 +402,7 @@
               data-index="2"
             >
               <img
-                src="assets/img/flyers/flyer03.png"
+                src="assets/img/flyers/flyer03.webp"
                 alt="TON 618 flyer 3"
                 loading="lazy"
               />
@@ -409,7 +413,7 @@
               data-index="3"
             >
               <img
-                src="assets/img/flyers/flyer04.png"
+                src="assets/img/flyers/flyer04.webp"
                 alt="TON 618 flyer 4"
                 loading="lazy"
               />
@@ -420,7 +424,7 @@
               data-index="4"
             >
               <img
-                src="assets/img/flyers/flyer05.png"
+                src="assets/img/flyers/flyer05.webp"
                 alt="TON 618 flyer 5"
                 loading="lazy"
               />
@@ -470,7 +474,7 @@
             </div>
             <div class="bio-image">
               <img
-                src="assets/img/bio01.png"
+                src="assets/img/bio01.webp"
                 alt="TON 618 band photo"
                 width="800"
                 height="1000"
