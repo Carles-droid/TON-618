@@ -186,8 +186,8 @@
   --alturaNavbar: 80px;
   --alturaNavbarMobile: 60px;
   --zIndexNavbar: 100;
-  --anchoMobilePanel: 80vw;
-  --anchoMobilePanelMax: 360px;
+  --anchoMobilePanel: 60vw;
+  --anchoMobilePanelMax: 280px;
   --tiempoPanelMobile: 280ms;
 
   /* ============================================================
