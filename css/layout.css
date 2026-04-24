@@ -261,6 +261,24 @@
   color: var(--colorAcentoSecundario);
 }
 
+.mobile-cosmic-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.35);
+  margin: 0 0 0.2rem 0;
+}
+
+.mobile-cosmic-data {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.03em;
+}
+
+.mobile-cosmic-data:last-child {
+  margin-bottom: 0;
+}
 /* ============================================================
    4. HERO
 ============================================================ */
@@ -382,7 +400,7 @@
 }
 
 .btn-hero:hover {
-  background-color: rgba(216, 208, 192, 0.1);
+  background-color: var(--fondoOverlayNavbar);
   border-color: rgba(216, 208, 192, 0.7);
   color: var(--colorTextoBase);
 }
@@ -826,7 +844,7 @@
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  grid-template-columns: 1.6fr 1fr 1fr;
   gap: var(--espacio12);
   align-items: start;
 }
@@ -864,6 +882,11 @@
 
 .footer-social a:hover {
   color: var(--colorAcentoSecundario);
+}
+
+/* Desktop: oculto */
+.footer-social-mobile {
+  display: none;
 }
 
 /* Col 3 — Contact */
@@ -1146,5 +1169,9 @@
   .footer-sub .container {
     flex-direction: column;
     text-align: center;
+  }
+
+  .footer-social-mobile {
+    display: block;
   }
 }
