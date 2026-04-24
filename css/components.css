@@ -66,7 +66,7 @@
 .btn-secondary {
   background-color: transparent;
   color: var(--colorTextoBase);
-  border: 1px solid var(--colorBordeFuerte);
+  border: 1px solid var(--colorTextoAcento);
 }
 
 .btn-secondary:hover {
