@@ -535,8 +535,22 @@
       <section id="about" class="section-bio" aria-labelledby="bio-heading">
         <div class="container">
           <div class="bio-grid">
-            <div class="bio-text">
-              <span class="eyebrow">Bio</span>
+            <!-- Columna izquierda: eyebrow + imagen -->
+            <div class="bio-left">
+              <span class="eyebrow bio-eyebrow">Bio</span>
+              <div class="bio-image">
+                <img
+                  src="assets/img/bio01.webp"
+                  alt="TON 618 band photo"
+                  width="800"
+                  height="1000"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <!-- Columna derecha: título + texto + CTA -->
+            <div class="bio-right">
               <h2 id="bio-heading" class="bio-title">TON 618</h2>
               <p class="bio-excerpt">
                 Formed in an undefined point between space and signal, TON 618
@@ -564,15 +578,6 @@
                 more like a condition: immersive, oppressive and inescapable.
               </p>
               <a href="bio.html" class="btn btn-secondary">Read Full Bio</a>
-            </div>
-            <div class="bio-image">
-              <img
-                src="assets/img/bio01.webp"
-                alt="TON 618 band photo"
-                width="800"
-                height="1000"
-                loading="lazy"
-              />
             </div>
           </div>
         </div>
