@@ -86,15 +86,22 @@
   letter-spacing: var(--letraEspaciadoEyebrow);
   text-transform: var(--textoTransformBoton);
   text-decoration: none;
-  padding: var(--espacio2) var(--espacio4);
-  border: 1px solid var(--colorBordeMedio);
-  color: var(--colorTextoSecundario);
+  padding: var(--espacio2) var(--espacio5);
+  background-color: var(--colorAcentoPrimario);
+  border: 1px solid var(--colorAcentoPrimario);
+  color: var(--colorTextoInverso);
   white-space: nowrap;
   min-height: 32px;
   transition:
+    background-color var(--transicionRapida),
     border-color var(--transicionRapida),
-    color var(--transicionRapida),
-    background-color var(--transicionRapida);
+    color var(--transicionRapida);
+}
+
+.btn-tickets:hover {
+  background-color: var(--colorAcentoFlareClaro);
+  border-color: var(--colorAcentoFlareClaro);
+  color: var(--colorTextoInverso);
 }
 
 .btn-tickets:hover {

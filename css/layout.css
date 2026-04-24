@@ -408,13 +408,6 @@
   margin: 0 auto;
 }
 
-.identity-divider {
-  width: 60px;
-  height: 1px;
-  background-color: var(--colorAcentoPrimario);
-  margin: var(--espacio8) auto 0;
-}
-
 /* ============================================================
    6. LATEST RELEASE
 ============================================================ */
