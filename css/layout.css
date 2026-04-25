@@ -83,6 +83,7 @@
   width: auto;
   display: block;
   transition: opacity var(--transicionRapida);
+  padding: 5px 0;
 }
 
 .nav-logo:hover .nav-logo-img {
@@ -360,7 +361,7 @@
 
 .hero-col-title {
   font-family: var(--fuenteDisplay);
-  font-size: var(--tamanoTexto2xl);
+  font-size: var(--tamanoTextoXl);
   font-weight: var(--pesoBold);
   letter-spacing: var(--letraEspaciadoCuerpo);
   text-transform: var(--textoTransformDisplay);
