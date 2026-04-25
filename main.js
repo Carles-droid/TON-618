@@ -286,3 +286,25 @@ if (document.readyState === "loading") {
 } else {
   init();
 }
+
+// ——— BACK TO TOP ———
+(function () {
+  const btn = document.getElementById("backToTop");
+  const threshold = 400; // px de scroll para aparecer
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (window.scrollY > threshold) {
+        btn.classList.add("visible");
+      } else {
+        btn.classList.remove("visible");
+      }
+    },
+    { passive: true },
+  );
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+})();
