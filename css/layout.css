@@ -114,6 +114,45 @@
   height: 20px;
 }
 
+/* ——— LANG TOGGLE — Desktop ——— */
+.nav-lang {
+  display: flex;
+  align-items: center;
+  padding-left: var(--espacio4);
+  border-left: 1px solid var(--colorBordeBase);
+  margin-left: var(--espacio2);
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: default;
+}
+
+.lang-option {
+  font-family: var(--fuenteMono);
+  font-size: var(--tamanoTextoSm);
+  font-weight: var(--pesoRegular);
+  letter-spacing: var(--letraEspaciadoEyebrow);
+  text-transform: uppercase;
+  color: var(--colorTextoSecundario);
+  transition: color var(--transicionRapida);
+}
+
+.lang-option:hover {
+  color: var(--colorAcentoSecundario);
+}
+
+.lang-separator {
+  font-family: var(--fuenteMono);
+  font-size: var(--tamanoTextoSm);
+  color: var(--colorBordeMedio);
+}
+
 /* Hamburger — oculto en desktop */
 .nav-hamburger {
   display: none;
@@ -280,6 +319,34 @@
 .mobile-cosmic-data:last-child {
   margin-bottom: 0;
 }
+
+/* ——— LANG TOGGLE — Mobile ——— */
+.mobile-lang {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: var(--espacio2) 0;
+}
+
+.mobile-lang-option {
+  font-family: var(--fuenteMono);
+  font-size: var(--tamanoTextoSm);
+  letter-spacing: var(--letraEspaciadoMono);
+  text-transform: uppercase;
+  color: var(--colorTextoTerciario);
+  transition: color var(--transicionRapida);
+}
+
+.mobile-lang-option:hover {
+  color: var(--colorAcentoSecundario);
+}
+
+.mobile-lang-separator {
+  font-family: var(--fuenteMono);
+  font-size: var(--tamanoTextoSm);
+  color: var(--colorBordeMedio);
+}
+
 /* ============================================================
    4. HERO
 ============================================================ */
@@ -1227,8 +1294,8 @@
   justify-content: center;
 
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--colorAcentoSecundario);
+  color: var(--colorAcentoSecundario);
   cursor: pointer;
   padding: 0;
 
@@ -1256,10 +1323,16 @@
   transform: translateY(0);
 }
 
+.back-to-top.force-hidden {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transform: translateY(12px) !important;
+}
+
 /* Hover */
 .back-to-top:hover {
   border-color: rgba(255, 255, 255, 0.7);
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--co);
 }
 
 .back-to-top:hover svg {

@@ -154,6 +154,18 @@
               </svg>
             </a>
           </li>
+          <!-- LANG TOGGLE — Desktop -->
+          <li class="nav-lang" role="none">
+            <button
+              class="lang-toggle"
+              id="langToggleDesktop"
+              aria-label="Switch language"
+            >
+              <a href="demo.html" class="lang-option lang-es">ES</a>
+              <span class="lang-separator" aria-hidden="true">/</span>
+              <a href="demo.html" class="lang-option lang-en">EN</a>
+            </button>
+          </li>
         </ul>
 
         <!-- HAMBURGER (mobile) -->
@@ -218,6 +230,13 @@
         <p class="mobile-cosmic-data">RA 12h 31m 35s | Dec +12° 23′</p>
         <p class="mobile-cosmic-label">Mass</p>
         <p class="mobile-cosmic-data">M ≈ 6.6 × 10<sup>10</sup> M☉</p>
+      </div>
+      <!-- LANG TOGGLE — Mobile -->
+      <div class="mobile-divider" aria-hidden="true"></div>
+      <div class="mobile-lang">
+        <a href="demo.html" class="mobile-lang-option">ES</a>
+        <span class="mobile-lang-separator" aria-hidden="true">/</span>
+        <a href="demo.html" class="mobile-lang-option">EN</a>
       </div>
     </nav>
 
@@ -367,7 +386,7 @@
       </section>
 
       <!-- TOUR PREVIEW -->
-      <section class="section-tour" aria-labelledby="tour-heading">
+      <section id="tour" class="section-tour" aria-labelledby="tour-heading">
         <div class="tour-banner" aria-hidden="true">
           <img
             src="assets/img/banner02.webp"
@@ -376,7 +395,7 @@
             height="500"
             loading="lazy"
           />
-          <div id="tour" class="tour-banner-overlay" aria-hidden="true"></div>
+          <div class="tour-banner-overlay" aria-hidden="true"></div>
         </div>
         <div class="container">
           <span class="eyebrow">Tour</span>
@@ -531,7 +550,7 @@
               <span class="eyebrow bio-eyebrow">Bio</span>
               <div class="bio-image">
                 <img
-                  src="assets/img/bio01.webp"
+                  src="assets/img/bio02.png"
                   alt="TON 618 band photo"
                   width="800"
                   height="1000"

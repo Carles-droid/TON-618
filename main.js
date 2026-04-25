@@ -82,6 +82,7 @@ const initMobilePanel = () => {
     panel.setAttribute("aria-hidden", "false");
     overlay.setAttribute("aria-hidden", "false");
     document.body.classList.add("scrollLock");
+    document.getElementById("backToTop").classList.add("force-hidden");
   };
 
   const closePanel = () => {
@@ -91,6 +92,7 @@ const initMobilePanel = () => {
     panel.setAttribute("aria-hidden", "true");
     overlay.setAttribute("aria-hidden", "true");
     document.body.classList.remove("scrollLock");
+    document.getElementById("backToTop").classList.remove("force-hidden");
   };
 
   const togglePanel = () => {
@@ -189,6 +191,7 @@ const initLightbox = () => {
     lightbox.classList.add("open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.classList.add("scrollLock");
+    document.getElementById("backToTop").classList.add("force-hidden");
 
     /* Foco al botón de cierre para accesibilidad */
     requestAnimationFrame(() => {
@@ -202,6 +205,7 @@ const initLightbox = () => {
     document.body.classList.remove("scrollLock");
     lightboxImg.src = "";
     lightboxImg.alt = "";
+    document.getElementById("backToTop").classList.remove("force-hidden");
   };
 
   /* Apertura al click en cada flyer */
