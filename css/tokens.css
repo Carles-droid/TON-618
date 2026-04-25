@@ -262,7 +262,9 @@
      EFECTOS — TEXTURAS Y FILTROS
   ============================================================ */
 
-  --blurNavbar: blur(12px);
+  --blurNavbar: blur(
+    8px
+  ); /* filtro de desenfoque para el navbar al hacer scroll */
   --blurOverlay: blur(4px);
   --blurLightbox: blur(6px);
   --grainnOpacidad: 0.035; /* opacidad del grain/noise SVG */
@@ -272,12 +274,4 @@
     rgba(8, 8, 8, 0.55) 50%,
     rgba(8, 8, 8, 0.8) 100%
   );
-
-  /* ============================================================
-     IMÁGENES — RUTAS DE REFERENCIA
-     (usar como background-image donde aplique)
-  ============================================================ */
-
-  /* --imagenHero:         url('../assets/images/hero-bg.jpg');      */
-  /* --imagenTourBanner:   url('../assets/images/tour-banner.jpg');  */
 }

@@ -32,8 +32,8 @@
 
 #navbar.scrolled {
   background-color: var(--colorFondoNavbarBlur);
-  backdrop-filter: var(--blurNavbar);
-  -webkit-backdrop-filter: var(--blurNavbar);
+  backdrop-filter: var(--blurOverlay);
+  -webkit-backdrop-filter: var(--blurOverlay);
   border-bottom: 1px solid var(--colorBordeBase);
 }
 
