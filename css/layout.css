@@ -32,8 +32,8 @@
 
 #navbar.scrolled {
   background-color: var(--colorFondoNavbarBlur);
-  backdrop-filter: var(--blurOverlay);
-  -webkit-backdrop-filter: var(--blurOverlay);
+  backdrop-filter: var(--blurNavbar);
+  -webkit-backdrop-filter: var(--blurNavbar);
   border-bottom: 1px solid var(--colorBordeBase);
 }
 
@@ -1345,4 +1345,112 @@
     bottom: 1.25rem;
     right: 1.25rem;
   }
+}
+
+/* ============================================================
+   DEMO MODAL
+============================================================ */
+
+.demo-modal {
+  position: fixed;
+  inset: 0;
+  z-index: var(--zLightbox, 1000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity var(--transicionSuave),
+    visibility var(--transicionSuave);
+}
+
+.demo-modal.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.demo-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.demo-modal-content {
+  position: relative;
+  z-index: 1;
+  background-color: var(--colorFondo, #0a0a0a);
+  border: 1px solid var(--colorBordeBase, rgba(255, 255, 255, 0.08));
+  padding: var(--espacio12, 3rem) var(--espacio10, 2.5rem);
+  max-width: 480px;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espacio4, 1rem);
+  transform: translateY(12px);
+  transition: transform var(--transicionSuave);
+}
+
+.demo-modal.is-open .demo-modal-content {
+  transform: translateY(0);
+}
+
+.demo-modal-close {
+  position: absolute;
+  top: var(--espacio4, 1rem);
+  right: var(--espacio5, 1.25rem);
+  background: none;
+  border: none;
+  color: var(--colorTextoMuted, rgba(255, 255, 255, 0.35));
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color var(--transicionRapida);
+  padding: 0;
+}
+
+.demo-modal-close:hover {
+  color: var(--colorTexto, #ffffff);
+}
+
+.demo-modal-eyebrow {
+  font-family: var(--fuenteMono);
+  font-size: var(--tamanoTextoXs, 0.7rem);
+  letter-spacing: var(--letraEspaciadoEyebrow, 0.15em);
+  text-transform: uppercase;
+  color: var(--colorTextoMuted, rgba(255, 255, 255, 0.35));
+  margin: 0;
+}
+
+.demo-modal-title {
+  font-family: var(--fuenteDisplay, "IM Fell DW Pica", serif);
+  font-size: clamp(1.25rem, 3vw, 1.6rem);
+  font-weight: var(--pesoRegular, 400);
+  color: var(--colorTexto, #ffffff);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.demo-modal-body {
+  font-family: var(--fuenteMono);
+  font-size: var(--tamanoTextoSm, 0.8rem);
+  color: var(--colorTextoSecundario, rgba(255, 255, 255, 0.6));
+  line-height: 1.7;
+  margin: 0;
+}
+
+.demo-modal-credit {
+  font-family: var(--fuenteMono);
+  font-size: var(--tamanoTextoXs, 0.7rem);
+  color: var(--colorTextoMuted, rgba(255, 255, 255, 0.25));
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.demo-modal-btn {
+  margin-top: var(--espacio2, 0.5rem);
 }

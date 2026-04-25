@@ -312,3 +312,92 @@ if (document.readyState === "loading") {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 })();
+
+/* ============================================================
+   DEMO MODAL
+   Intercepta todos los triggers que apuntan a demo.html
+   o a funciones aún no disponibles.
+============================================================ */
+
+(function () {
+  const modal = document.getElementById("demoModal");
+  const overlay = document.getElementById("demoModalOverlay");
+  const closeBtn = document.getElementById("demoModalClose");
+  const confirmBtn = document.getElementById("demoModalConfirm");
+
+  if (!modal) return;
+
+  // — Abrir
+  function openDemoModal() {
+    modal.removeAttribute("aria-hidden");
+    modal.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+    closeBtn.focus();
+  }
+
+  // — Cerrar
+  function closeDemoModal() {
+    modal.setAttribute("aria-hidden", "true");
+    modal.classList.remove("is-open");
+    document.body.style.overflow = "";
+  }
+
+  // — Triggers: enlaces que apuntan a demo.html
+  document.querySelectorAll('a[href="demo.html"]').forEach(function (el) {
+    el.addEventListener("click", function (e) {
+      e.preventDefault();
+      openDemoModal();
+    });
+  });
+
+  // — Triggers: botones Tickets (href="#")
+  document.querySelectorAll(".btn-tickets").forEach(function (el) {
+    el.addEventListener("click", function (e) {
+      e.preventDefault();
+      openDemoModal();
+    });
+  });
+
+  // — Triggers: lang toggle (desktop — botones ES/EN dentro del nav)
+  document.querySelectorAll(".lang-toggle .lang-option").forEach(function (el) {
+    el.addEventListener("click", function (e) {
+      e.preventDefault();
+      openDemoModal();
+    });
+  });
+
+  // — Triggers: lang toggle mobile
+  document
+    .querySelectorAll(".mobile-lang .mobile-lang-option")
+    .forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        openDemoModal();
+      });
+    });
+
+  // — Triggers: CTA "Listen on Bandcamp" (sección CTA, href externo real pero aún no disponible)
+  // Nota: si Bandcamp ya está activo, eliminar este bloque.
+  document
+    .querySelectorAll('a[href="https://ton618.bandcamp.com"]')
+    .forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        openDemoModal();
+      });
+    });
+
+  // — Cierre: botones de cierre y confirm
+  closeBtn.addEventListener("click", closeDemoModal);
+  confirmBtn.addEventListener("click", closeDemoModal);
+
+  // — Cierre: click en overlay
+  overlay.addEventListener("click", closeDemoModal);
+
+  // — Cierre: tecla ESC
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && modal.classList.contains("is-open")) {
+      closeDemoModal();
+    }
+  });
+})();
